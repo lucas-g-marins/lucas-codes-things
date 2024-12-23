@@ -1,0 +1,47 @@
+main {
+  position: relative;
+  z-index: 1;
+  background-color: #fafafa;
+  min-height: 100vh;
+  transition: transform 0.5s;
+}
+
+.main {
+  &__title {
+    color: #483826;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.open {
+  transform: translate(240px, 0);
+}
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1.5rem;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__button {
+    background-color: transparent;
+    border: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__text {
+    font-family: fractul-variable, sans-serif;
+    font-variation-settings: "wght" 400;
+    font-size: 1.25rem;
+    margin: 0 5px;
+    padding-top: 4px;
+  }
+}
