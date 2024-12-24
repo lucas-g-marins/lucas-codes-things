@@ -5,9 +5,15 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  overflow-x: hidden;
+
+  @include global.mobile {
+    flex-direction: column-reverse;
+    height: 120vh;
+  }
 
   &__slides-container {
-    width: 350px;
+    width: 21.875rem;
     height: 475px;
     position: relative;
     img:first-child {
@@ -16,8 +22,12 @@
   }
 
   &__content-container {
-    width: 350px;
+    width: 21.875rem;
     margin: 0 0 0 60px;
+
+    @include global.mobile {
+      margin-bottom: 2rem;
+    }
   }
 
   &__title {
