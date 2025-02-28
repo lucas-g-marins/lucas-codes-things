@@ -1,3 +1,25 @@
+@font-face {
+  font-family: "Faune";
+  font-weight: 400;
+  src: url("../../assets/fonts/faune-regular.woff2"),
+    url("../../assets/fonts/faune-regular.woff");
+}
+
+@font-face {
+  font-family: "Faune";
+  font-weight: 400;
+  font-style: italic;
+  src: url("../../assets/fonts/faune-italic.woff2"),
+    url("../../assets/fonts/faune-italic.woff");
+}
+
+@font-face {
+  font-family: "Faune";
+  font-weight: 700;
+  src: url("../../assets/fonts/faune-bold.woff2"),
+    url("../../assets/fonts/faune-bold.woff");
+}
+
 h1 {
   font-family: fractul-variable, sans-serif;
   font-variation-settings: "wght" 500;
